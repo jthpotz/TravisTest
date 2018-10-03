@@ -3,6 +3,7 @@ jdk:
         - oraclejdk8
 script: 
         - ant build
+        mvn sonar:sonar -Dsonar.projectKey=jthpotz_TravisTest -Dsonar.organization=jthpotz-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=5fef66c9a9b876c91d3ec9a500ba459e5435f90b       
         - sonar-scanner
 addons:
   sonarcloud:
